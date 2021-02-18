@@ -11,7 +11,7 @@ module Spree
     VALUES = [50, 100, 150, 200, 250, 300, 500, 1000].freeze
 
     belongs_to :variant
-    belongs_to :line_item
+    belongs_to :line_item, optional: true
 
     has_many :transactions, class_name: 'Spree::GiftCardTransaction'
 

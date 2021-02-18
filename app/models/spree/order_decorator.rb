@@ -1,3 +1,5 @@
-Spree::Order.class_eval do
-  include Spree::Order::GiftCard
+module Spree::OrderDecorator
+	Spree::Order.class_eval do
+		include Spree::Order::GiftCard
+	end
 end
